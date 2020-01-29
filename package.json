@@ -1,0 +1,39 @@
+{
+  "name": "rxjs-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "ka7eh",
+  "private": false,
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.config.dev.js --color",
+    "build": "webpack --config webpack.config.prod.js",
+    "lint": "eslint -c .eslintrc ./"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "html-webpack-plugin": "4.0.0-beta.5",
+    "prettier": "^1.19.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
+  }
+}
